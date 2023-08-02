@@ -10,8 +10,8 @@ const activeChain = CoreBlockchain;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={activeChain}
-       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-      >
+       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID} >
+       
       {/* Render the navigation menu above each component */}
       <Navbar />
       <Component {...pageProps} />
