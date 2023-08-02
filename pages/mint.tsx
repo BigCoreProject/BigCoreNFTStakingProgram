@@ -3,18 +3,23 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { nftDropContractAddress } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 const Mint: NextPage = () => {
   const router = useRouter();
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Mint An NFT!</h1>
+      <h1 className={styles.h1}>Mint An NFT !</h1>
 
       <p className={styles.explain}>
-        Here is where we use our <b>NFT Drop</b> contract to allow users to mint
-        one of the NFTs that we lazy minted.
+        Each wallet can mint up to 3 <b>NFT Items</b> that we lazy minted to stake it
       </p>
+       
+      <p className={styles.explain}>
+        Price : 10 Core per item
+      </p>
+      
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
       <Web3Button
@@ -29,8 +34,9 @@ const Mint: NextPage = () => {
           alert(error);
         }}
       >
-        Claim An NFT
+        Mint
       </Web3Button>
+
     </div>
   );
 };
