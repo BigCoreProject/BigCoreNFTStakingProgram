@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>thirdweb Deploy - Custom Staking Contract</h1>
+      <h1 className={styles.h1}>BigCore NFT Staking Program</h1>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -17,10 +17,10 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/mint`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
+          <Image src="/icons/nftminting-logo.png" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>Mint an NFT</h2>
           <p className={styles.selectBoxDescription}>
-            Use the NFT Drop Contract to claim an NFT from the collection.
+            Mint an NFT from the Contract (Phase 1 Price: 10 Core per item)
           </p>
         </div>
 
@@ -30,11 +30,11 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/stake`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/token.webp" alt="token" width={64} height={64} />
+          <Image src="/icons/nftstaking-logo.png" alt="token" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
           <p className={styles.selectBoxDescription}>
-            Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
+            Stake <b>BigCoreNFTStakingProgram</b>{" "}
+            NFT items to earn <b>Bcore</b> tokens as rewards !
           </p>
         </div>
       </div>
