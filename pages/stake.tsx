@@ -62,7 +62,14 @@ const Stake: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <div className={styles.container}>
+      {/* Top Section */}
+      <h1 className={styles.h1}>Loading...</h1>
+    </div>;
+  }
+
+  function ethersutilsformatUnits(claimableRewards: BigNumber, arg1: number): import("react").ReactNode {
+    throw Error("Function not implemented.");
   }
 
   return (
@@ -82,7 +89,7 @@ const Stake: NextPage = () => {
                 <b>
                   {!claimableRewards
                     ? "Loading..."
-                    : ethers.utils.formatUnits(claimableRewards, 18)}
+                    : ethers.utils.formatUnits(claimableRewards, 9)}
                 </b>{" "}
                 {tokenBalance?.symbol}
               </p>
@@ -128,7 +135,7 @@ const Stake: NextPage = () => {
                   contractAddress={stakingContractAddress}
                   action={() => stakeNft(nft.metadata.id)}
                 >
-                  Stake
+                  Stake Your NFT Items
                 </Web3Button>
               </div>
             ))}
