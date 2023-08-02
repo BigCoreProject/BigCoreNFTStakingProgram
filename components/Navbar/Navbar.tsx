@@ -17,8 +17,8 @@ export function Navbar() {
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
               src="/BigCore-Logo-2.png"
-              width={200}
-              height={80}
+              width={135}
+              height={50}
               alt="BigCore Logo"
             />
           </Link>
