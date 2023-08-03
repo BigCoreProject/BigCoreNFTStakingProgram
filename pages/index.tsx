@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/mint`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/nftminting-logo.png" alt="drop" width={64} height={64} />
+          <Image src="/icons/NFTMinting_Logo.png" alt="drop" width={80} height={80} />
           <h2 className={styles.selectBoxTitle}>Mint an NFT</h2>
           <p className={styles.selectBoxDescription}>
             Mint an NFT from the Contract (Phase 1 Price: 10 Core per item)
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/stake`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/nftstaking-logo.png" alt="token" width={64} height={64} />
+          <Image src="/icons/NFTStaking_Logo.png" alt="token" width={80} height={80} />
           <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
           <p className={styles.selectBoxDescription}>
             Stake <b>BigCoreNFTStakingProgram</b>{" "}
