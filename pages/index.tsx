@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <Image src="/icons/NFTMinting_Logo.png" alt="drop" width={80} height={80} />
           <h2 className={styles.selectBoxTitle}>Mint an NFT</h2>
           <p className={styles.selectBoxDescription}>
-            Mint an NFT from the Contract (Phase 1 Price: 10 Core per item)
+            Mint an NFT from the Contract (Phase 1 Price: 10 (WL) / 20 (PB) Core per item)
           </p>
         </div>
 
