@@ -17,7 +17,11 @@ const Mint: NextPage = () => {
       </p>
        
       <p className={styles.explain}>
-        Price : 10 Core per item
+        Price (Whitelist) : 20 Core per item (Unlimited)
+      </p>
+
+      <p className={styles.explain}>
+        Price (Public) : 10 Core per item (Up to 3 per wallet)
       </p>
       
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
